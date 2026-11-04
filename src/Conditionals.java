@@ -23,7 +23,15 @@ void main() {
     // to turn on (shooterVelocity = 1) or turn off (shooterVelocity = 0) the
     // shooter motors. Then print the value of `shooterVelocity`. After running,
     // change `shooterEnabled` to `true` and re-run; the code should now print 1.
-    boolean shooterEnabled = false;
+    boolean shooterEnabled = true;
+    int shooterVelocity = 10;
+    if (shooterEnabled == true) {
+        shooterVelocity = 1;
+    } else {
+        shooterVelocity = 0;
+    }
+
+    System.out.println(shooterVelocity);
 
 
     // Print "Success!" if `statusCode` is equal to 0. Otherwise, if `statusCode`
