@@ -24,6 +24,7 @@ void main() {
     int calibrationTime;
 
 
+calibrationTime = 0;
 
 
 
