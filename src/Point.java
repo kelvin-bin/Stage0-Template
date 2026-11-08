@@ -16,13 +16,13 @@ public class Point {
     private final double x;
     private final double y;
 
-public static final Point ORIGIN = new Point(0, 0);
-
-Point(double x, double y) {
+public Point(double x, double y) {
     this.x = x;
     this.y = y;
     
 }
+
+public static final Point ORIGIN = new Point(0,0);
 
 public double getX() {
     return this.x;
@@ -33,7 +33,8 @@ public double getY() {
 }
 
 
-}
+
+
 
 
 void main() {
@@ -41,9 +42,14 @@ void main() {
     // in the variable `pointOne`, and the other representing the point (3, 0)
     // and stored in the variable `pointTwo`.
 
+    Point pointOne = new Point(2,5);
+    Point pointTwo = new Point(3, 0);
+
 
     // On two separate lines, print the x-coordinate of pointOne,
     // and the y-coordinate of pointTwo, using the `Point` class's getter functions.
+    System.out.println(pointOne.getX());
+    System.out.println(pointTwo.getY());
 
     // Using the same getter functions and conditional statements,
     // print "Point one is farther right!" if `pointOne`'s x-coordinate is larger,
@@ -73,4 +79,5 @@ void main() {
     // check to a variable first, such as `pointsEqual`, then check the boolean
     // value of that in conditional statements.
 
+}
 }

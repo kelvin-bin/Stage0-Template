@@ -26,7 +26,7 @@ System.out.println(first + " " + second);
     // amount of rotations per hour and store it in a variable `rotPerHour`.
     // Then, print the value of `rotPerHour`.
     int rotPerSec = 5;
-    int rotPerHour = 5 * 3600;
+    int rotPerHour = rotPerSec * 3600;
     System.out.println(rotPerHour);
 
     // Create an integer variable `quotient1`, and assign to it the value
@@ -49,7 +49,7 @@ System.out.println(first + " " + second);
     // from 0 to 360, using an arithmetic operator, and store this value in a
     // variable `normalizedAngle`. Then print the value of `normalizedAngle`.
     int rawEncoderDegrees = 560;
-    int normalizedAngle = 560 - 360;
+    int normalizedAngle = rawEncoderDegrees - 360;
     System.out.println(normalizedAngle);
 
 
