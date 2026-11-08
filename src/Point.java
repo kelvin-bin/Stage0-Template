@@ -11,6 +11,30 @@
 // field `ORIGIN`, of type `Point`, and assign to it a new `Point` instance
 // with x = 0 and y = 0.
 
+public class Point {
+
+    private final double x;
+    private final double y;
+
+public static final Point ORIGIN = new Point(0, 0);
+
+Point(double x, double y) {
+    this.x = x;
+    this.y = y;
+    
+}
+
+public double getX() {
+    return this.x;
+}
+
+public double getY() {
+    return this.y;
+}
+
+
+}
+
 
 void main() {
     // Create two `Point` objects: one representing the point (2, 5) and stored
