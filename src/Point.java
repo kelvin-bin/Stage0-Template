@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-// Complete the class definition below. First, add two private final fields:
+// Complete the class definition below. First, add tw o private final fields:
 // `x` and `y`, both of type `double`. Then, define a public constructor
 // `Point(double x, double y)`, and getter methods `getX()` and `getY()`.
 // Lastly, below the definitions of the `x` and `y` fields, define a static final
@@ -58,7 +58,11 @@ void main() {
     // `pointTwo`'s x-coordinate to -5; the code should now print
     // "Point one is farther right!"
 
-
+    if (pointOne.getX() > pointTwo.getX()) {
+        System.out.println("Point one is farther to the right");
+    } else if (pointTwo.getX() > pointOne.getX()) {
+        System.out.println("Point two is farther to the right");
+    }
 
 
     // Using the same getter functions, use conditional statements
@@ -71,7 +75,19 @@ void main() {
     // 6. Print "p2 origin" if `pointTwo` is at the origin.
     // After the code runs, change `pointOne` to (0, 0) and `pointTwo` to (0, 3).
     // You should now see "p1 x-axis", "p1 y-axis", "p1 origin", and "p2 y-axis".
+if (pointOne.getY() == 0) {
 
+    System.out.println("p1 x axis");
+
+} else if (pointOne.getX() == 0) {
+
+    System.out.println("p1 y-axis");
+
+} else if (PointOne.ORIGIN) {
+
+    System.out.println("p1 origin");
+
+}
 
     // Lastly, print "p1 equals p2!" if `pointOne` and `pointTwo`'s x- and y-
     // coordinates are equal, and "p1 does not equal p2" otherwise. After
@@ -83,6 +99,6 @@ void main() {
 
 }
 
-}
 
+}
 
