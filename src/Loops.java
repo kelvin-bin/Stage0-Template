@@ -24,7 +24,7 @@ void main() {
     int calibrationTime;
 
     calibrationTime = 0;
-    
+
     while (calibrationTime <= 5) {
         if (calibrationTime < 5) {
             System.out.println("Calibrating");

@@ -64,7 +64,7 @@ void main() {
     } else {
         System.out.println("Discarding input");
         input = 0;
-    }   
+    }
 
     drivetrain.setThrottle(input);
 
@@ -88,7 +88,7 @@ void main() {
     // `false`.
     boolean intakeDisabled = true;
 
-    boolean intakeEnabled = !intakeDisabled; 
+    boolean intakeEnabled = !intakeDisabled;
     System.out.println(intakeEnabled);
 
 

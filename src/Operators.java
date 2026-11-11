@@ -33,7 +33,7 @@ System.out.println(first + " " + second);
     // of 5 divided by 3. Then print the value of `quotient1`.
 
     int quotient1 = 5 / 3;
-    
+
     System.out.println(quotient1);
 
     // Create a variable `quotient2` of type double, and assign to it the
