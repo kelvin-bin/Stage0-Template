@@ -11,17 +11,19 @@
 // field `ORIGIN`, of type `Point`, and assign to it a new `Point` instance
 // with x = 0 and y = 0.
 
-public class Classes {
+public static class Classes {
 
   private final double x;
   private final double y;
 
-  public static final Classes ORIGIN = new Classes(0, 0);
+
   public Classes(double x, double y) {
 
     this.x = x;
     this.y = y;
   }
+
+   public static final Classes ORIGIN = new Classes(0, 0);
 
 
 
@@ -33,13 +35,16 @@ public class Classes {
     return y;
   }
 
-  void main() {
+ 
+}
+
+ void main() {
     // Create two `Point` objects: one representing the point (2, 5) and stored
     // in the variable `pointOne`, and the other representing the point (3, 0)
     // and stored in the variable `pointTwo`.
 
-    Classes pointOne = new Classes(2, 5);
-    Classes pointTwo = new Classes(3, 0);
+    Classes pointOne = new Classes(-4, 5);
+    Classes pointTwo = new Classes(-5, 0);
 
     // On two separate lines, print the x-coordinate of pointOne,
     // and the y-coordinate of pointTwo, using the `Point` class's getter functions.
@@ -71,6 +76,16 @@ public class Classes {
     // You should now see "p1 x-axis", "p1 y-axis", "p1 origin", and "p2 y-axis".
     //
 
+    if (pointOne.getY() == 0) {
+      System.out.println("p1 x-axis");
+    } else if (pointOne.getX() == 0) {
+      System.out.println("p1 y-axis");
+    } else if (pointOne.ORIGIN.getX() == 0) {
+      System.out.println("p1 origin");
+    }
+
+
+
     // Lastly, print "p1 equals p2!" if `pointOne` and `pointTwo`'s x- and y-
     // coordinates are equal, and "p1 does not equal p2" otherwise. After
     // the code runs, change both `pointOne` and `pointTwo` to (5, 8);
@@ -80,4 +95,3 @@ public class Classes {
     // value of that in conditional statements.
 
   }
-}

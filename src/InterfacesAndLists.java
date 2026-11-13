@@ -43,7 +43,23 @@ public class LaserCAN implements IntakeSensor {
 // `getFirst()` and `getSecond()`.
 
 public class Pair<A, B> {
-    private final 
+    private final A first;
+    private final B second;
+
+    Pair(A first, B second) {
+        this.first = first;
+        this.second = second;
+
+    }
+
+    public A getFirst() {
+        return first;
+    }
+
+    public B getSecond() {
+        return second;
+    }
+
 }
 
 
@@ -52,19 +68,36 @@ void main() {
     // Create a variable named `laserCAN` of type `IntakeSensor`, and assign it a new instance of LaserCAN.
     // Print the result of calling `distanceMillimeters()` on both sensors.
 
+    IntakeSensor beamBreak = new BeamBreak();
+    IntakeSensor laserCAN = new LaserCAN();
+
+    System.out.println(beamBreak.distanceMillimeters() + " " + laserCAN.distanceMillimeters());
+
 
     // Create a Pair of String and Integer (Pair<String, Integer>) with the values "Robot" and 254.
     // Print the first value and the second value separated by a space using getFirst() and getSecond().
+
+    Pair<String, Integer> pair = new Pair<>("Robot", 254);
+    System.out.println(pair.getFirst() + " " + pair.getSecond());
 
 
     // Create a List of Strings (`List<String>`) named `subsystems` using `new ArrayList<>()`.
     // Add the strings "Drivetrain", "Intake", and "Shooter" to `subsystems`.
 
+    List<String> subsystems = new ArrayList<>();
+
+    subsystems.add("Intake");
+    subsystems.add("Shooter");
+    subsystems.add("Drivetrain");
 
     // Print the size of the `subsystems` list.
+    System.out.println(subsystems.size());
 
 
     // Using a for-each loop, iterate over `subsystems` and print each subsystem name.
 
+    for (String word : subsystems) {
+        System.out.println(word);
+    }
 
 }

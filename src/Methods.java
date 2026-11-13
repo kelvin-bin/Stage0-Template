@@ -25,7 +25,7 @@ class ScoreKeeper {
     // as the argument.
 
     
-ScoreKeeper() {
+public ScoreKeeper() {
     score = this.MIN_SCORE;
 }
 
@@ -34,7 +34,7 @@ ScoreKeeper() {
     // to `startingScore`.
 
     public ScoreKeeper(int startingScore) {
-        startingScore = this.score;
+        this.score = startingScore;
     }
 
     
