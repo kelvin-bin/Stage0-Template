@@ -43,8 +43,8 @@ public static class Classes {
     // in the variable `pointOne`, and the other representing the point (3, 0)
     // and stored in the variable `pointTwo`.
 
-    Classes pointOne = new Classes(-4, 5);
-    Classes pointTwo = new Classes(-5, 0);
+    Classes pointOne = new Classes(5, 8);
+    Classes pointTwo = new Classes(5,8);
 
     // On two separate lines, print the x-coordinate of pointOne,
     // and the y-coordinate of pointTwo, using the `Point` class's getter functions.
@@ -64,6 +64,8 @@ public static class Classes {
       System.out.println("Point two is farther to the right");
     }
 
+
+
     // Using the same getter functions, use conditional statements
     // to handle the following six cases:
     // 1. Print "p1 x-axis" if `pointOne`'s y-coordinate is 0.
@@ -78,10 +80,21 @@ public static class Classes {
 
     if (pointOne.getY() == 0) {
       System.out.println("p1 x-axis");
-    } else if (pointOne.getX() == 0) {
+    } 
+    if (pointOne.getX() == 0) {
       System.out.println("p1 y-axis");
-    } else if (pointOne.ORIGIN.getX() == 0) {
+    } 
+    if (pointOne.ORIGIN.getX() == pointOne.getX() && pointOne.ORIGIN.getY() == pointOne.getY()) {
       System.out.println("p1 origin");
+    } 
+    if (pointTwo.getY() == 0) {
+      System.out.println("p2 x-axis");
+    } 
+    if (pointTwo.getX() == 0 ){
+      System.out.println("p2 y-axis");
+    } 
+    if (pointTwo.ORIGIN.getX() == pointTwo.getX() && pointTwo.ORIGIN.getY() == pointTwo.getY())  {
+      System.out.println("p2 origin");
     }
 
 
@@ -93,5 +106,10 @@ public static class Classes {
     // HINT: You might find it convenient to assign the result of the equality
     // check to a variable first, such as `pointsEqual`, then check the boolean
     // value of that in conditional statements.
+    if (pointOne.getX() == pointTwo.getX() && pointOne.getY() == pointTwo.getY()) {
+      System.out.println("p1 equals p2");
+    } else {
+      System.out.println("p1 does not equal p2");
+    }
 
   }
